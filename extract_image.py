@@ -24,7 +24,7 @@ def get_image():
 def get_title():
     api_key = "nGkCgrdTCt8hO5IBDjwwi75tXLcznjrUJF8SNlug"
     url = "https://api.nasa.gov/planetary/apod" \
-          "?api_key=nGkCgrdTCt8hO5IBDjwwi75tXLcznjrUJF8SNlug"
+          f"?api_key={api_key}"
     response = requests.get(url)
     data = response.json()
     img_title = data["title"]
